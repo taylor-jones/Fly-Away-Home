@@ -2,7 +2,6 @@
 
 This is text-based game with a 2d map that I completed as a project for coursework at Oregon State University. The inspiration for the gameplay is from the original ToeJam & Earl game for Sega Genesis, though this is obviously much simpler.
 
-<br>
 
 ### How To play
 Clone the repository and then (from within the cloned directory) run Make. That produces an executable file named "play" that can be run to play the game.
