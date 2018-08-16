@@ -123,6 +123,7 @@ The game contains 4 different types of Earthlings, each of which you can interac
 - Bookie - the Bookie will do just about anything to get you to gamble. He’s got a couple of games that he likes to play, and he’ll offer to let you gamble with your money or your energy.
 
 
+<br>
 
 ### Final Notes
 - The Alien is limited by its health. Every move requires energy, and once it runs out, you lose the game.
