@@ -124,14 +124,11 @@ The game contains 4 different types of Earthlings, each of which you can interac
 
 
 
-<br>
-
 ### Final Notes
 - The Alien is limited by its health. Every move requires energy, and once it runs out, you lose the game.
 - In order to complete the game, you must find all the ship pieces to put the ship together, which flies you back to your Homeland (the final Island). If you make it here before all your energy is gone, you win.
 - Many of the elements/locations of elements on the island are randomly generated and should be different from game to game.
 
-<br>
 
 ### Easter Egg
 - There’s a way to get a specific Bookie to offer you a deal that could win the game early for you. What you need to do is interact with the Bookie on level 2, twice. The first time, he won’t offer the deal. You’ll need to decline his first few offers, and then he’ll offer you something really nice, but it’s risky.
