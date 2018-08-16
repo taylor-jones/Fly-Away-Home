@@ -6,7 +6,6 @@ This is text-based game with a 2d map that I completed as a project for coursewo
 ### How To play
 Clone the repository and then (from within the cloned directory) run Make. That produces an executable file named "play" that can be run to play the game.
 
-<br>
 
 ## Synopsis
 
