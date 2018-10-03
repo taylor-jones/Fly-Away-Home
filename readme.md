@@ -8,9 +8,16 @@ make
 
 ## Synopsis
 
-The player is represented by an alien. The Alien’s spaceship has crash landed on Earth, and the pieces of the spaceship are scattered on the different islands (of Earth). In order to return back to your home land, you must collect the different ship pieces (which puts your spaceship back together) at which point you can hop in the spaceship and fly home. The Earth you experience in the game is represented by different islands (levels), and there is one ship piece on each island. Your overall goal is to find all the ship pieces so you can put the spaceship back together. However, the goal on each island is to find a single ship piece and
-then find the elevator, which is how you’re able to move up to the next island. No matter which island you’re on when you find the final ship piece, the spaceship will appear. Once it does, all you have to do is get to the spaceship and then you’re home free back to your motherland. Along your journey, you’ll have to endure the different terrains of earth, possibly interact with different
-types of earthlings, and maybe even use some cash or other presents to aid you along the way. All of this is described in detail below.
+You're an alien whose spaceship has crash landed on Earth, and the pieces of the spaceship are scattered on the different islands (of Earth). In order to return back to your home land, you must collect the different ship pieces (which puts your spaceship back together) at which point you can hop in the spaceship and fly home. 
+
+The Earth you experience in the game is represented by different islands (levels), and **there is one ship piece on each island. Your overall goal is to find all the ship pieces so you can put the spaceship back together**. However, the goal on each island is to find a single ship piece and then find the elevator, which is how you’re able to move up to the next island. No matter which island you’re on when you find the final ship piece, the spaceship will appear. Once it does, all you have to do is get to the spaceship and then you’re home free back to your motherland. Along your journey, you’ll have to endure the different terrains of earth, possibly interact with different types of earthlings, and maybe even use some cash or other presents to aid you along the way. All of this is described in detail below.
+
+<br>
+
+### Know at least these things
+- The Alien is limited by its health. Every move requires energy, and once it runs out, you lose the game.
+- In order to complete the game, you must find all the ship pieces to put the ship together, which flies you back to your Homeland (the final Island). If you make it here before all your energy is gone, you win.
+- Many of the elements/locations of elements on the island are randomly generated and should be different from game to game.
 
 <br>
 
@@ -27,9 +34,10 @@ Spaces each have 6 pointers to other Spaces:
 - Above
 - Below
 
-Top, Bottom, Left, and Right are 2D pointers (in the dimensions of reality sense) since they point to the neighboring spaces on the same island. Above and below are 3D pointers since they point to spaces on the island above and below the current island.
+> Top, Bottom, Left, and Right are 2D pointers (in the dimensions of reality sense) since they point to the neighboring spaces on the same island. Above and below are 3D pointers since they point to spaces on the island above and below the current island.
 
 There are 9 different types of Spaces in the game, each of which is represented by its own class (which derives from an abstract Space class). Each type of Space provides a different experience for the Alien (and some experiences are based on additional conditions):
+
 * **Grass** _(green)_ _This is the default type of Space on earth._
     * While on grass, the Alien moves at a normal speed, and each step drains the Alien of 1 energy point. No other conditions affect the Alien’s experience on Grass.
 * **Water** _(blue)_
@@ -46,7 +54,7 @@ There are 9 different types of Spaces in the game, each of which is represented 
     * Whenever you’re back on your homeland, everything is good again, so each step will actually increase your energy by 1 point. 
     
     
-*These last 2 types of spaces are a bit different than the others, and there was some question as to whether to represent these as Spaces or Items (which I’ll describe further), but ultimately I chose to represent them as Spaces due to their being stationary.*
+> These last 2 types of spaces are a bit different than the others, and there was some question as to whether to represent these as Spaces or Items (which I’ll describe further), but ultimately I chose to represent them as Spaces due to their being stationary.*
 
 * **Elevator** _(red)_
   * The elevator most the Alien up to the next Island. It cost no energy.
@@ -107,9 +115,10 @@ The game contains multiple instances of many of these types of Items, but not ev
 <br>
 
 ### Earthlings
-Note: The game contains multiple instances of each of these types of Earthlings, but not every Earthing is necessarily present on each Island
+> The game contains multiple instances of each of these types of Earthlings, but not every Earthing is necessarily present on each Island.
 
 The game contains 4 different types of Earthlings, each of which you can interact with in different ways.
+
 * **Shark** - Sharks can only be in the water, but you want to stay away from them. One hit from these will cost you 25 energy points, and they’ll come for you as soon as you get in their water.
 
 * **Wizard** - the Wizard only moves horizontally across the island. If you find him, he’ll offer to replenish your energy for a small fee.
@@ -120,12 +129,6 @@ The game contains 4 different types of Earthlings, each of which you can interac
 
 
 <br>
-
-### Final Notes
-- The Alien is limited by its health. Every move requires energy, and once it runs out, you lose the game.
-- In order to complete the game, you must find all the ship pieces to put the ship together, which flies you back to your Homeland (the final Island). If you make it here before all your energy is gone, you win.
-- Many of the elements/locations of elements on the island are randomly generated and should be different from game to game.
-
 
 ### Easter Egg
 - There’s a way to get a specific Bookie to offer you the deal of a lifetime. He'll never offer the first time.
