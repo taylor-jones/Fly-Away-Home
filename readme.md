@@ -1,7 +1,7 @@
 ### How To play
 
 ```
-cd Fly-Back-Home
+cd Fly-Away-Home
 make
 ./play
 ```
